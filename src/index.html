@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web de mi portafolio personal de desarrollador Front-End">
+    <meta name="author" content="Javier Marchena Gallo">
+    <meta name="keywords" content="Desarrollador Front-End, portafolio, HTML, CSS, Tailwind CSS, JavaScript">
+    <meta name="robots" content="index, follow">
+    <!---Meta etiquetas para redes sociales-->
+    <meta property="og:title" content="Portafolio de Javier Marchena Gallo">
+    <meta property="og:description" content="Explora mi portafolio como desarrollador Front-End, con proyectos de HTML, CSS y JavaScript">
+    <meta property="og:type" content="website">
+    <title>Javier Marchena Gallo || Full-Stack Developer </title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-white text-gray-800 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+    <!-- NavBar -->
+    <nav class="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-50 transition-colors duration-300 ">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <button id="menuToggle" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 md:hidden">
+                        <span class="sr-only">Abrir menú principal</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                    <div class="flex-shirk-0 flex items-center px-3">
+                        <span class="text-2xl font-bold text-gray-800 dark:text-white">JM</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex md:ml-6 md:items-center">
+                    <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Inicio</a>
+                    <a href="#proyectos" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Proyectos</a>
+                    <a href="#sobre-mi" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Sobre mí</a>
+                    <a href="#contacto" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">Contacto</a>
+                </div>
+                <div class="flex items-center">
+                    <button id="darkModeToggle" class="p-2 rounded-md text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700">Inicio</a>
+                <a href="#proyectos" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700">Proyectos</a>
+                <a href="#sobre-mi" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700">Sobre mí</a>
+                <a href="#contacto" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section  -->
+    <section class="bg-white dark:bg-gray-900 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8 flex flex-col items-center justify-center min-h-[cal(70vh-4rem)]">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-white text-center leading-tight mb-4">
+                Javier Marchena Gallo
+            </h1>
+            <p class="mt-3 text-xl text-gray-500 dark:text-gray-400 text-center">Full-Stack Developer</p>
+            <p class="mt-3 text-lg text-gray-500 dark:text-gray-400 text-center mb-8">Software Engineering Student</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 w-full max-w-md ">
+                <a href="#proyectos" class="w[200px] px-8 py-3 border border-gray-300 dark:border-gray-700 text-base font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 text-center mx-auto sm:mx-0">Ver Proyectos</a>
+                <a href="#contacto" class="w[200px] px-8 py-3 border boder-gray-800 dark:border-white text-base font-medium rounded-md text-white bg-gray-800 dark:bg-white dark:text-gray-800 hover:bg-gray-700 dark:hover:bg-gray-100 text-center mx-auto sm:mx-0">Contáctame</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="bg-off-white dark:bg-gray-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white text-center mb-8">Mi Stack Tecnológico</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 justify-items-center">
+                <!-- Frontend -->
+                <div class="flex flex-col items-center">
+                    <svg class="w-12 h-12 mb-2 text-blue-600" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M22.67 47h99.67v73.67H22.67z"/><path data-name="original" fill="#007acc" d="M1.5 63.91v62.5h125v-125H1.5zm100.73-5a15.56 15.56 0 017.82 4.5 20.58 20.58 0 013 4c0 .16-5.4 3.81-8.69 5.85-.12.08-.6-.44-1.13-1.23a7.09 7.09 0 00-5.87-3.53c-3.79-.26-6.23 1.73-6.21 5a4.58 4.58 0 00.54 2.34c.83 1.73 2.38 2.76 7.24 4.86 8.95 3.85 12.78 6.39 15.16 10 2.66 4 3.25 10.46 1.45 15.24-2 5.2-6.9 8.73-13.83 9.9a38.32 38.32 0 01-9.52-.1 23 23 0 01-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34 9.34 0 011.15-.73L82 101l3.59-2.08.75 1.11a16.78 16.78 0 004.74 4.54c4 2.1 9.46 1.81 12.16-.62a5.43 5.43 0 00.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48 16.48 0 01-3.43-6.25 25 25 0 01-.22-8c1.33-6.23 6-10.58 12.82-11.87a31.66 31.66 0 019.49.26zm-29.34 5.24v5.12H56.66v46.23H45.15V69.26H28.88v-5a49.19 49.19 0 01.12-5.17C29.08 59 39 59 51 59h21.83z"/></svg>
+                    <span class="text-gray-600 dark:text-gray-400">TypeScript</span>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <i class="fab fa-react text-5xl mb-2 text-blue-400"></i>
+                    <span class="text-gray-600 dark:text-gray-400">React</span>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <i class="fab fa-angular text-5xl mb-2 text-red-600"></i>
+                    <span class="text-gray-600 dark:text-gray-400">Angular</span>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <svg class="w-12 h-12 mb-2 text-teal-500" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 11.1C15.3 3.9 19.8.3 27 .3c10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 27.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" transform="translate(5 16)" fill="currentColor"/></svg>
+                    <span class="text-gray-600 dark:text-gray-400">Tailwind</span>
+                </div>
+
+                <!-- Backend -->
+                <div class="flex flex-col items-center">
+                    <i class="fab fa-java text-5xl mb-2 text-red-600"></i>
+                    <span class="text-gray-600 dark:text-gray-400">Java</span>
+                </div>
+                
+                <div class="flex flex-col items-center">
+                    <svg class="w-12 h-12 mb-2" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#6DB33F" d="M116.452 6.643a59.104 59.104 0 01-6.837 12.136A64.249 64.249 0 0064.205-.026C28.984-.026 0 28.982 0 64.242a64.316 64.316 0 0019.945 46.562l2.368 2.1a64.22 64.22 0 0041.358 15.122c33.487 0 61.637-26.24 64.021-59.683 1.751-16.371-3.051-37.077-11.24-61.7zM29.067 111.17a5.5 5.5 0 01-4.269 2.034c-3.018 0-5.487-2.484-5.487-5.502 0-3.017 2.485-5.501 5.487-5.501 1.25 0 2.485.433 3.452 1.234 2.351 1.9 2.718 5.384.817 7.735zm87.119-19.238c-15.843 21.122-49.68 14.003-71.376 15.02 0 0-3.852.234-7.721.867 0 0 1.45-.617 3.335-1.334 15.226-5.301 22.43-6.335 31.685-11.086 17.427-8.869 34.654-28.274 38.24-48.463-6.637 19.422-26.75 36.11-45.077 42.895-12.557 4.635-35.238 9.136-35.238 9.136l-.917-.484c-15.442-7.518-15.91-40.977 12.157-51.78 12.291-4.735 24.048-2.134 37.323-5.302 14.175-3.367 30.568-14.004 37.238-27.874 7.471 22.19 16.46 56.932.35 78.405z"/>
+                    </svg>
+                    <span class="text-gray-600 dark:text-gray-400">Spring Boot</span>
+                </div>
+                
+                <div class="flex flex-col items-center">
+                    <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL" class="h-12 w-auto mb-2 object-contain">
+                    <span class="text-gray-600 dark:text-gray-400">MySQL</span>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="https://www.postgresql.org/media/img/about/press/elephant.png" alt="PostgreSQL" class="w-12 h-12 mb-2">
+                    <span class="text-gray-600 dark:text-gray-400">PostgreSQL</span>
+                </div>
+                
+                <!-- Tools -->
+                <div class="flex flex-col items-center">
+                    <i class="fab fa-git-alt text-5xl mb-2 text-red-500"></i>
+                    <span class="text-gray-600 dark:text-gray-400">Git</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fab fa-github text-5xl mb-2 text-gray-700 dark:text-gray-300"></i>
+                    <span class="text-gray-600 dark:text-gray-400">GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos" class="bg-white dark:bg-gray-900 transition-colors duration-300 mb-12">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white text-center mb-3">Proyectos Destacados</h2>
+            <p class="text-center text-gray-600 dark:text-gray-400 mb-8 text-lg italic">Especializado en arquitecturas escalables y soluciones empresariales.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-9">
+            
+            <div class="bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-indigo-200 dark:border-indigo-900 transform transition hover:-translate-y-2">
+                <a href="https://github.com/marchena290/restaurante_pro_backend.git" target="_blank">
+                    <img src="./img/sistema.webp" class="w-full h-48 object-cover border-b border-gray-100 dark:border-gray-700" alt="RestaurantePro Backend Architecture" loading="lazy">
+                </a>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">RestaurantePro</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 text-sm leading-relaxed">
+                        Plataforma integral Full-Stack desarrollada para optimizar la gestión de reservaciones. Implementa una arquitectura por capas con <strong>Spring Boot</strong>, seguridad mediante <strong>JWT</strong> y persistencia en <strong>PostgreSQL (3FN)</strong>. Frontend dinámico con Angular.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 text-xs font-medium px-2.5 py-0.5 rounded">Spring Boot</span>
+                        <span class="bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-100 text-xs font-medium px-2.5 py-0.5 rounded">Angular</span>
+                        <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs font-medium px-2.5 py-0.5 rounded">PostgreSQL</span>
+                    </div>
+                    <a href="https://github.com/marchena290/restaurante_pro_backend.git" target="_blank" class="inline-block font-bold text-indigo-600 hover:text-indigo-500 dark:text-indigo-400">Ver Código en GitHub →</a>
+                </div>
+            </div>
+
+            <div class="bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 transform transition hover:-translate-y-2">
+                <a href="https://github.com/marchena290/system-tickets_backend.git" target="_blank">
+                    <img src="./img/Sistema-de-Gestión-de-Tickets.webp" class="w-full h-48 object-cover border-b border-gray-100 dark:border-gray-700" alt="Sistema de Gestión de Tickets Backend" loading="lazy">
+                </a>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Sistema de Gestión de Tickets</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 text-sm leading-relaxed">
+                        Backend robusto para gestión de incidentes y cálculo de <strong>SLA</strong> basado en prioridad. Construido bajo arquitectura modular con <strong>NestJS</strong>, implementación de Roles (RBAC) y TypeORM. Optimizado con <strong>IA (Claude)</strong> para lógica compleja.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-100 text-xs font-medium px-2.5 py-0.5 rounded">NestJS</span>
+                        <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs font-medium px-2.5 py-0.5 rounded">TypeScript</span>
+                        <span class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-100 text-xs font-medium px-2.5 py-0.5 rounded">TypeORM</span>
+                    </div>
+                    <a href="https://github.com/marchena290/system-tickets_backend.git" target="_blank" class="inline-block font-bold text-indigo-600 hover:text-indigo-500 dark:text-indigo-400">Ver Código en GitHub →</a>
+                </div>
+            </div>
+
+            <div class="bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-gray-200 dark:border-gray-700 transform transition hover:-translate-y-2">
+                <a href="https://www.linkedin.com/posts/javier-marchena-gallo-748b64343_aspnet-dotnet-mvc-activity-7325285905928253440-dTtZ" target="_blank">
+                    <img src="./img/1746484255880.webp" class="w-full h-48 object-cover border-b border-gray-100 dark:border-gray-700" alt="Restaurante Management System .NET" loading="lazy">
+                </a>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Restaurante Management (.NET)</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4 text-sm leading-relaxed">
+                        Sistema de escritorio/web basado en arquitectura de 3 capas. Implementación de patrones <strong>MVC</strong>, manejo de procedimientos almacenados en <strong>SQL Server</strong> y validaciones con Data Annotations. Proyecto final de Ingeniería en Sistemas.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-100 text-xs font-medium px-2.5 py-0.5 rounded">.NET MVC</span>
+                        <span class="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 text-xs font-medium px-2.5 py-0.5 rounded">SQL Server</span>
+                        <span class="bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 text-xs font-medium px-2.5 py-0.5 rounded">C#</span>
+                    </div>
+                    <a href="https://www.linkedin.com/posts/javier-marchena-gallo-748b64343_aspnet-dotnet-mvc-activity-7325285905928253440-dTtZ" target="_blank" class="inline-block font-bold text-indigo-600 hover:text-indigo-500 dark:text-indigo-400">Ver Detalles en LinkedIn →</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="bg-white dark:bg-gray-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white text-center mb-8">Sobre Mí</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="space-y-4 px-4">
+                    <button class="w-full text-left px-4 py-2 rounded-lg transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 hover:bg-gray-100 dark:hover:bg-gray-700" onclick="showAnswer('quien')" id="quien-btn">
+                        <h3 class="text-lg font-medium text-gray-900 dark:text-white">¿Quién es Javier Marchena Gallo?</h3>
+                    </button>
+                    <button class="w-full text-left px-4 py-2 rounded-lg transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 hover:bg-gray-100 dark:hover:bg-gray-700" onclick="showAnswer('trabajos')" id="trabajos-btn">
+                        <h3 class="text-lg font-medium text-gray-900 dark:text-white">¿Qué tipo de trabajos hago?</h3>
+                    </button>
+                    <button class="w-full text-left px-4 py-2 rounded-lg transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 hover:bg-gray-100 dark:hover:bg-gray-700" onclick="showAnswer('actualizado')" id="actualizado-btn">
+                        <h3 class="text-lg font-medium text-gray-900 dark:text-white">¿Como me mantengo actualizado?</h3>
+                    </button>
+                    <button class="w-full text-left px-4 py-2 rounded-lg transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 hover:bg-gray-100 dark:hover:bg-gray-700" onclick="showAnswer('certificaciones')" id="certificaciones-btn">
+                        <h3 class="text-lg font-medium text-gray-900 dark:text-white">¿Qué certificaciones tengo y cómo complementan mis estudios?</h3>
+                    </button>
+                </div>
+                <div id="answerContent" class="text-gray-600 dark:text-white px-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="bg-white dark:bg-gray-900 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
+                    ¿Quieres trabajar conmigo?
+                </h2>
+                <p class="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-400">
+                    Estoy siempre buscando nuevos proyectos y desafíos. Si tienes una idea o necesitas ayuda con tu proyecto, !contáctame! 
+                </p>
+                <a href="mailto:marchena.javier.dev@gmail.com" class="mt-8 inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 dark:bg-white dark:text-gray-800 dark:hover:bg-gray-100">
+                    Contáctame
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div>
+                    <p class="text-xl font-bold text-gray-900 dark:text-white">Javier Marchena Gallo</p>
+                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Full-Stack Developer</p>
+                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Software Engineering Student</p>
+                </div>
+                <div class="flex space-x-7 px-2">
+                    <a href="https://github.com/marchena290" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300">
+                        <span class="sr-only">GitHub</span>
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/javier-marchena-gallo-748b64343" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300">
+                        <span class="sr-only">LinkedIn</span>
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-200 dark:border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+                <p class="mt-8 text-base text-gray-500 dark:text-gray-400 md:mt-0 md:order-1">
+                    &copy; 2026 Javier Marchena Gallo. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
