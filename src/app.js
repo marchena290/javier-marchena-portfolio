@@ -49,16 +49,16 @@ function showAnswer(id) {
 
     switch(id){
         case 'quien':
-            content = 'Soy Javier Marchena Gallo, Desarrollador Backend especializado en los ecosistemas Java y .NET. Me enfoco en la construcción de sistemas robustos y escalables, aplicando principios de ingeniería para resolver problemas complejos de negocio.'
-            break;
+        content = 'Soy Javier Marchena Gallo, Desarrollador Backend especializado en Java/Spring Boot y NestJS. Me enfoco en la construcción de APIs robustas y seguras, aplicando principios de arquitectura limpia para resolver problemas reales de negocio.'
+        break;
         case 'trabajos':
-            content = 'Como Software Engineer, diseño arquitecturas seguras y eficientes. Mis proyectos estrella incluyen "RestaurantePro", un sistema Full-Stack con Spring Boot y Angular, y una API de Gestión de Tickets en NestJS que implementa lógica avanzada de SLA y control de acceso basado en roles (RBAC). Mi estándar de trabajo se basa en la Tercera Forma Normal (3FN) para bases de datos y principios SOLID para un código mantenible.'
+            content = 'Diseño y desarrollo APIs RESTful con Spring Boot y NestJS, implementando seguridad con JWT/RBAC, bases de datos relacionales bajo normalización 3FN y documentación con Swagger/OpenAPI. Todos mis proyectos los desarrollo de forma individual, demostrando autonomía técnica completa.'
             break;
         case 'actualizado':
-            content = 'Mi estrategia de actualización se centra en la convergencia entre la ingeniería tradicional y la Inteligencia Artificial. Adopto una mentalidad "AI-First", integrando herramientas como Claude AI y GitHub Copilot para optimizar el refactor de código, asegurar principios SOLID y acelerar el ciclo de debugging. Además, profundizo en el ecosistema Java (JDK 21) y Spring Boot a través de plataformas líderes como Alura Latam y Udemy, participando activamente en comunidades de desarrollo para dominar las últimas tendencias en arquitecturas microservicios y despliegue continuo.'
+            content = 'Me mantengo actualizado a través de plataformas como Alura Latam, donde completé el programa Oracle Next Education (ONE) Backend G8. Profundizo constantemente en el ecosistema Java/Spring Boot y NestJS, y practico construyendo proyectos reales.'
             break;
         case 'certificaciones':
-            content = 'Actualmente curso la carrera de Ingeniería en Sistemas en la UISIL. Cuento con certificaciones de alto valor en la industria, como "Spring Boot con Java" de Alura Latam y "Frontend Development" de VLA Academy. También poseo la certificación de Responsive Web Design de freeCodeCamp, lo que respalda mi capacidad para entregar interfaces profesionales y adaptables.'
+            content = 'Actualmente curso el último cuatrimestre de Ingeniería en Sistemas en la Universidad Internacional San Isidro Labrador. Cuento con la certificación Oracle Next Education (ONE) – Backend G8 de Alura Latam/Oracle, y la certificación Master Full Stack Front End Web Developer de VLA Academy.'
             break;
     }
 
